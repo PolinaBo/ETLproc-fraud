@@ -8,9 +8,9 @@ import re
 ### Источник
 # Создание подключения к PostgreSQL
 conn_src = psycopg2.connect(database = "bank",
-                            host =     "de-edu-db.chronosavant.ru",
-                            user =     "bank_etl",
-                            password = "bank_etl_password",
+                            host =     "****",
+                            user =     "****",
+                            password = "****",
                             port =     "5432")
 # Отключение автокоммита
 conn_src.autocommit = False
@@ -19,9 +19,9 @@ cursor_src = conn_src.cursor()
 ### Data Warehouse
 # Создание подключения к PostgreSQL
 conn_dwh = psycopg2.connect(database = "edu",
-                            host =     "de-edu-db.chronosavant.ru",
-                            user =     "deaise",
-                            password = "meriadocbrandybuck",
+                            host =     "***",
+                            user =     "****",
+                            password = "****",
                             port =     "5432")
 # Отключение автокоммита
 conn_dwh.autocommit = False
